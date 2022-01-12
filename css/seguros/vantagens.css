@@ -1,11 +1,10 @@
 .vantagens-bg {
   background: var(--cor-12);
-  --padding: 120px;
 }
 
 .vantagens {
-  padding-top: var(--padding);
-  padding-bottom: var(--padding);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .vantagens h2 {
