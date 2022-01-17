@@ -12,3 +12,21 @@ function ativarLink(link) {
 }
 
 links.forEach(ativarLink);
+
+//Includes
+// console.log("javascript".includes("a"));
+
+//Ativar links orçamento, transferindo info a partir de url
+
+const params = new URLSearchParams(location.search);
+// console.log(params);
+
+function activateProduct(parameter) {
+  const element = document.getElementById(parameter);
+  if (element) {
+    element.checked = true;
+    console.log(element);
+  }
+}
+
+params.forEach(activateProduct);
