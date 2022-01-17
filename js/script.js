@@ -30,3 +30,24 @@ function activateProduct(parameter) {
 }
 
 params.forEach(activateProduct);
+
+// Perguntas Frequentes subir/descer
+
+const questions = document.querySelectorAll(".perguntas button");
+
+function activateQuestion(e) {
+  const question = e.currentTarget;
+  const controls = question.getAttribute("aria-controls");
+  const answer = document.getElementById(controls);
+
+  answer.classList.toggle("ativa");
+  const active = answer.classList.contains("ativa");
+  question.setAttribute("aria-expanded", active);
+  console.log(active);
+}
+
+function eQuestions(question) {
+  question.addEventListener("click", activateQuestion);
+}
+
+questions.forEach(eQuestions);
