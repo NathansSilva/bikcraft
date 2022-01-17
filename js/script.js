@@ -51,3 +51,25 @@ function eQuestions(question) {
 }
 
 questions.forEach(eQuestions);
+
+// Galeria de bicicletas
+
+const gallery = document.querySelectorAll(".bicicleta-imagens img");
+const galleryContainer = document.querySelector(".bicicleta-imagens");
+
+function changeImg(e) {
+  const img = e.currentTarget;
+  const media = matchMedia("(min-width: 1000px)").matches;
+  if (media) {
+    galleryContainer.prepend(img);
+  }
+}
+
+gallery.forEach((img) => {
+  img.addEventListener("click", changeImg);
+});
+
+//Animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
