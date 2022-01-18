@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orçamento | Bikcraft - Bicicletas Elétricas</title>
+  <title>Orçamento | Faça seu orçamento | Bikcraft - Bicicletas Elétricas</title>
   <meta name="description" content="Faça o orçamento da sua bikcraft">
 
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="./css/style.min.css"" as=" style">
-  <link rel="stylesheet" href="./css/style.min.css"">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
 
   <link rel=" preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +42,7 @@
         <h1 class="font-1-xxl cor-0">Solicite um orçamento<span class="cor-p1">.<span></h1>
       </div>
     </div>
-    <form class="orcamento container" action="./">
+    <form class="orcamento container" action="./enviar.php" method="post">
       <div class="orcamento-produto">
         <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
         <!-- name = deve ser o mesmo para radio -->
@@ -120,7 +120,7 @@
         </div>
         <div class="col-2">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
         </div>
 
         <h2 class="font-1-xs cor-9 col-2">entrega</h2>
@@ -227,6 +227,7 @@
     </div>
   </footer>
   <script src="./js/script.js"></script>
+  <script src="./js/formulario.js"></script>
 </body>
 
 </html>
